@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UV Impact Data - Sunrise Parry</title>
     <link rel="stylesheet" href="uvimpact.css">
+
+        <!-- Highcharts scripts -->
+        <link rel="stylesheet" href="..\component\skingraph\skingraph.css">
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/series-label.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    
+        <!-- Highcharts configuration and data -->
+        <script src="..\component\skingraph\skingraph.js" defer></script>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -31,8 +44,11 @@
                 Multiple dermatological conditions, such as sunburn, premature skin ageing, and perhaps skin cancer. It is crucial to shield your skin from UV rays throughout the year, not only in the summer or when you are at the beach.</p>
             <h3>UV Trend</h3>
             <img src="..\images\uvtrend.png" alt="UV Trend" class="Trend-image">
-            <h3>Skin Cancer</h3>
-            <img src="..\images\skincancer.png" alt="Skin Cancer" class="data-image">
+            <h3>Skin Cancer</h3>           
+            <!-- Highcharts chart -->
+            <figure class="highcharts-figure">
+                <div id="container"></div>
+            </figure>
         </div>
     </div>
 </body>
