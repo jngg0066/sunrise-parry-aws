@@ -89,7 +89,9 @@ nav ul li a {
     max-width: 100%;
     margin-bottom: 10px;
 }
-
+.column p {
+    text-align: center;
+}
 .column ul {
     margin: 0;
     padding: 0;
