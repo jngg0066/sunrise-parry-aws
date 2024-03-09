@@ -1,10 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
-    Highcharts.chart('container', {
+    Highcharts.chart('container2', {
     chart: {
         type: 'spline'
     },
     title: {
         text: 'Skin Cancer Trend From 2013-2023'
+    },
+    subtitle: {
+        text:
+            'Source: <a target="_blank" ' +
+            'href="https://www.aihw.gov.au/getmedia/9f5cdd1c-87f7-4f05-9a4f-8c5141a3e17e/AIHW-CAN-122-CDiA-2021-Book-2a-Cancer-mortality-age-standardised-rates-5-year-age-groups.xlsx.aspx">aihw</a>',
+        align: 'center'
     },
     xAxis: {
         categories: ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
