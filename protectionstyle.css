@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F4EFBD; /* Set your desired background color */
+    background-color: #F4EFBD; /* Set desired background color */
 }
 
 /* Apply the same styles for the navigation bar */
@@ -36,7 +36,7 @@ nav ul li a {
 }
 
 .logo img {
-    width: 150px; /* Set your desired width */
+    width: 150px; /* Set desired width */
     height: auto;
     margin-right: 0px;
 }

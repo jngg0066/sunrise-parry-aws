@@ -33,7 +33,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000000; /* Set your desired text color */
+    color: #000000; /* Set desired text color */
 }
 
 /* Logo styles */
@@ -43,13 +43,13 @@ nav ul li a {
 }
 
 .logo img {
-    width: 150px; /* Set your desired width */
+    width: 150px; /* Set desired width */
     height: auto;
     margin-right: 0px;
 }
 
 .logo h1 {
-    font-size: 24px; /* Set your desired font size */
+    font-size: 24px; /* Set desired font size */
     color: #D18585;
     margin-right: 50px;
 }

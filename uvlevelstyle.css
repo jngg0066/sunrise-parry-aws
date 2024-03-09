@@ -8,13 +8,13 @@
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #F4EFBD; /* Set your desired background color */
+    background-color: #F4EFBD; 
 }
 
 /* Navigation bar styles */
 nav {
-    background-color: #F4EFBD; /* Set your desired background color */
-    color: #D18585; /* Set your desired text color */
+    background-color: #F4EFBD; 
+    color: #D18585; 
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -32,7 +32,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000000; /* Set your desired text color */
+    color: #000000; 
 }
 
 /* Logo styles */
@@ -67,10 +67,6 @@ nav ul li a {
     text-align: center;
 }
 
-.slogan h1 {
-    color: #333; /* Dark text for the slogan */
-    margin: 0;
-}
 
 .image-container {
     margin-top: 20px;
@@ -117,14 +113,12 @@ nav ul li a {
     background-color: #f0f0f0; /* Highlight the active page tab */
 }
 
-/* Responsive adjustments if needed */
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
     }
 }
 
-/* Dropdown Filter Styles */
 #uvFilter {
     margin: 10px 0;
     padding: 5px;
