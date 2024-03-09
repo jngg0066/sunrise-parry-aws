@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UV Level Map - Sunrise Parry</title>
-    <link rel="stylesheet" href="uvlevelstyle.css">
+    <link rel="stylesheet" href="uvlevel.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -25,7 +25,6 @@
     <div class="content">
         <div class="left-column">
             <h2>UV Levels Map</h2>
-            <label for="uvFilter">UV Level:</label>
             <select id="uvFilter" onchange="filterMap(this.value)">
                 <option value="default">Select UV Level</option>
                 <option value="low">Low (1-2)</option>
@@ -35,9 +34,8 @@
                 <option value="extreme">Extreme (11 and above)</option>
                 <!-- Add more filter options as needed -->
             </select>
-            <img src="..\images\uvmap.jpg" alt="UV Map" class="Map-image">
         </div>
     </div>
-    <script src="uvlevelfilter.js"></script>
+    <script src="component\uvlevelfilter\uvlevelfilter.js"></script>
 </body>
 </html>

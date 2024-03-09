@@ -101,6 +101,8 @@ nav ul li a {
 .content {
     display: flex;
     align-items: center;
+    justify-content: center; /* Add this line to center horizontally */
+    flex-direction: column; /* Add this line to stack items vertically */
 }
 
 .map-image, .data-image {
