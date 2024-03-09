@@ -1,0 +1,70 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4EFBD; /* Set your desired background color */
+    text-align: center; /* Center align text */
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #F4EFBD; /* Set your desired background color */
+    color: #D18585; /* Set your desired text color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000; /* Set your desired text color */
+}
+
+/* Logo styles */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px; /* Set your desired width */
+    height: auto;
+    margin-right: 0px;
+}
+
+.logo h1 {
+    font-size: 24px; /* Set your desired font size */
+    color: #D18585;
+    margin-right: 50px;
+}
+
+.right-column {
+    margin-top: 20px; /* Add margin to separate content */
+}
+
+h2, h3, p {
+    margin-bottom: 15px; /* Add spacing between elements */
+}
+
+.data-image {
+    width: 80%; /* Adjust image width as needed */
+    max-width: 400px; /* Limit maximum image width */
+    margin: 10px auto; /* Center the images horizontally */
+}
+

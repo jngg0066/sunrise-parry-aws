@@ -1,0 +1,100 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4EFBD; /* Set your desired background color */
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #F4EFBD; /* Set your desired background color */
+    color: #D18585; /* Set your desired text color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000; /* Set your desired text color */
+}
+
+/* Logo styles */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px; /* Set your desired width */
+    height: auto;
+    margin-right: 0px;
+}
+
+.logo h1 {
+    font-size: 24px; /* Set your desired font size */
+    color: #D18585;
+    margin-right: 50px;
+}
+
+/* Content styles */
+h2 {
+    margin-top: 20px;
+    font-size: 30px; /* Set your desired font size */
+    color: #D18585; /* Set your desired text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.content {
+    margin-top: 50px; /* Adjust the value as needed */
+    text-align: center;
+
+}
+
+.blocks-container {
+    padding: 0 20px; /* Adjust the padding as needed */
+}
+
+.blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.block {
+    width: 30%; /* Adjust width as needed */
+    background-color: #F4EFBD; /* Set your desired background color */
+    padding: 10px;
+    border: 1px solid #99B99D; /* Set your desired border style */
+    text-align: center;
+
+}
+
+.block h3 {
+    margin-top: 10px; /* Adjust the value as needed */
+    font-weight: normal; /* Ensure the font weight is normal */
+
+}
+
+.block p {
+    margin-top: 30px; /* Adjust the value as needed */
+
+}
