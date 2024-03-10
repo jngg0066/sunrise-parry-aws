@@ -2,15 +2,17 @@ var timerInterval; // Global variable to store the timer interval
 
 // Function to start the countdown timer
 function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
+    var timer = duration;
     timerInterval = setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
+        var hours = parseInt(timer / 3600, 10);
+        var minutes = parseInt((timer % 3600) / 60, 10);
+        var seconds = parseInt(timer % 60, 10);
 
+        hours = hours < 10 ? "0" + hours : hours;
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
-        display.textContent = minutes + ":" + seconds;
+        display.textContent = hours + ":" + minutes + ":" + seconds;
 
         if (--timer < 0) {
             timer = duration;
@@ -21,16 +23,12 @@ function startTimer(duration, display) {
 // Function to calculate time needed to reapply sunscreen based on UV level
 function calculateReapplyTime(uvLevel) {
     switch(uvLevel) {
-        case 'low':
-            return 120; // 2 minutes
-        case 'moderate':
-            return 300; // 5 minutes
+        case 'low-moderate':
+            return 7200; // 2 Hours
         case 'high':
-            return 600; // 10 minutes
-        case 'very high':
-            return 900; // 15 minutes
-        case 'extreme':
-            return 1200; // 20 minutes
+            return 5400; // 1.5 Hours
+        case 'very high-extreme':
+            return 3600; // 1 Hour
         default:
             return 0;
     }
@@ -104,7 +102,13 @@ stopButton.addEventListener('click', function() {
 
 // Function to format time
 function formatTime(seconds) {
-    var minutes = Math.floor(seconds / 60);
+    var hours = Math.floor(seconds / 3600);
+    var minutes = Math.floor((seconds % 3600) / 60);
     var remainingSeconds = seconds % 60;
-    return (minutes < 10 ? '0' : '') + minutes + ':' + (remainingSeconds < 10 ? '0' : '') + remainingSeconds;
+
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    remainingSeconds = remainingSeconds < 10 ? "0" + remainingSeconds : remainingSeconds;
+
+    return hours + ":" + minutes + ":" + remainingSeconds;
 }
