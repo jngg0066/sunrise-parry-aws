@@ -1,0 +1,64 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4EFBD;
+    text-align: center;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #F4EFBD;
+    color: #D18585;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Logo styles */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    margin-right: 0px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #D18585;
+    margin-right: 50px;
+}
+
+/* Centered text */
+.center-text {
+    margin-top: 20px;
+}
+
+.center-text h2 {
+    margin-bottom: 20px;
+}
