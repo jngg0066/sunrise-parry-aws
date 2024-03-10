@@ -25,17 +25,23 @@
     <div class="content">
         <div class="left-column">
             <h2>UV Levels Map</h2>
-            <select id="uvFilter" onchange="filterMap(this.value)">
-                <option value="default">Select UV Level</option>
-                <option value="low">Low (1-2)</option>
-                <option value="moderate">Moderate (3-5)</option>
-                <option value="high">High (6-7)</option>
-                <option value="very high">Very high (8-10)</option>
-                <option value="extreme">Extreme (11 and above)</option>
-                <!-- Add more filter options as needed -->
-            </select>
+            <link rel="stylesheet" href="..\component\weather\weather.css">
         </div>
     </div>
-    <script src="component\uvlevelfilter\uvlevelfilter.js"></script>
+    <div class="input">
+        <input type="text" placeholder="Enter the city" class="input_text">
+        <input type="submit" value="Submit" class="submit">
+      </div>
+    <div class="container">
+        <div class="card">
+          <h1 class="name" id="name"></h1>
+          <p class="temp"></p>
+          <p class="clouds"></p>
+          <p class="desc"></p>
+          <p class="UV Index"></p>
+    
+        </div>
+    <!-- Include the JavaScript file -->
+    <script src="..\component\weather\weather.js"></script>
 </body>
 </html>
