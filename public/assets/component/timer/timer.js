@@ -1,30 +1,3 @@
-// Function to show browser notification
-function showNotification() {
-    // Check if the browser supports notifications
-    if (!("Notification" in window)) {
-        alert("This browser does not support desktop notification");
-    }
-    // Check if permission is granted
-    else if (Notification.permission === "granted") {
-        // Create the notification
-        var notification = new Notification("Sunscreen Reapplication Reminder", {
-            body: "It's time to reapply your sunscreen!",
-            icon: "../assets/images/notification-icon.png" // Path to your notification icon
-        });
-    }
-    // If permission is not granted, ask for permission
-    else if (Notification.permission !== "denied") {
-        Notification.requestPermission().then(function (permission) {
-            // If permission is granted, show the notification
-            if (permission === "granted") {
-                var notification = new Notification("Sunscreen Reapplication Reminder", {
-                    body: "It's time to reapply your sunscreen!",
-                    icon: "../assets/images/notification-icon.png" // Path to your notification icon
-                });
-            }
-        });
-    }
-}
 var timerInterval; // Global variable to store the timer interval
 
 // Function to calculate time needed to reapply sunscreen based on UV level
@@ -44,7 +17,6 @@ function startTimer(duration, display) {
 
         if (--timer < 0) {
             timer = duration;
-            showNotification();
         }
     }, 1000);
 }
@@ -57,7 +29,7 @@ function calculateReapplyTime(uvLevel) {
         case 'high':
             return 5400; // 1.5 Hours
         case 'very high-extreme':
-            return 1; // 1 Hour
+            return 3600; // 1 Hour
         default:
             return 0;
     }
