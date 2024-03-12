@@ -1,5 +1,14 @@
+// Request permission for notifications when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+    if (Notification.permission !== 'granted') {
+        Notification.requestPermission();
+    }
+});
+
+
 var timerInterval; // Global variable to store the timer interval
 
+// Function to calculate time needed to reapply sunscreen based on UV level
 // Function to start the countdown timer
 function startTimer(duration, display) {
     var timer = duration;
@@ -15,8 +24,12 @@ function startTimer(duration, display) {
         display.textContent = hours + ":" + minutes + ":" + seconds;
 
         if (--timer < 0) {
-            timer = duration;
-        }
+            clearInterval(timerInterval);
+            display.textContent = "00:00:00";
+            // Trigger a notification when the timer reaches 0
+            if (Notification.permission === 'granted') {
+                var notification = new Notification('Sunscreen Reminder', {
+                    body: 'It\'s time to reapply sunscreen!',
     }, 1000);
 }
 
@@ -28,7 +41,7 @@ function calculateReapplyTime(uvLevel) {
         case 'high':
             return 5400; // 1.5 Hours
         case 'very high-extreme':
-            return 3600; // 1 Hour
+            return 1; // 1 Hour
         default:
             return 0;
     }
@@ -51,25 +64,10 @@ uvLevelSelect.addEventListener('change', function() {
     // Calculate time needed to reapply sunscreen based on selected UV level
     var reapplyTimeInSeconds = calculateReapplyTime(selectedUvLevel);
 
-    // Update the timer
+    // Update the timer display immediately
     display.textContent = formatTime(reapplyTimeInSeconds);
-});
 
-// Get the start button
-var startButton = document.getElementById('startButton');
-
-// Add event listener for start button
-startButton.addEventListener('click', function() {
-    // Stop the timer if it's already running
-    clearInterval(timerInterval);
-
-    // Get the selected UV level
-    var selectedUvLevel = uvLevelSelect.value;
-
-    // Calculate time needed to reapply sunscreen based on selected UV level
-    var reapplyTimeInSeconds = calculateReapplyTime(selectedUvLevel);
-
-    // Start the timer
+    // Start the timer immediately
     startTimer(reapplyTimeInSeconds, display);
 });
 
