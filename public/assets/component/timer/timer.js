@@ -30,6 +30,9 @@ function startTimer(duration, display) {
             if (Notification.permission === 'granted') {
                 var notification = new Notification('Sunscreen Reminder', {
                     body: 'It\'s time to reapply sunscreen!',
+                });
+            }
+        }
     }, 1000);
 }
 
