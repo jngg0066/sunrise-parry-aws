@@ -1,11 +1,30 @@
-// Request permission for notifications when the page loads
-document.addEventListener('DOMContentLoaded', function() {
-    if (Notification.permission !== 'granted') {
-        Notification.requestPermission();
+// Function to show browser notification
+function showNotification() {
+    // Check if the browser supports notifications
+    if (!("Notification" in window)) {
+        alert("This browser does not support desktop notification");
     }
-});
-
-
+    // Check if permission is granted
+    else if (Notification.permission === "granted") {
+        // Create the notification
+        var notification = new Notification("Sunscreen Reapplication Reminder", {
+            body: "It's time to reapply your sunscreen!",
+            icon: "../assets/images/notification-icon.png" // Path to your notification icon
+        });
+    }
+    // If permission is not granted, ask for permission
+    else if (Notification.permission !== "denied") {
+        Notification.requestPermission().then(function (permission) {
+            // If permission is granted, show the notification
+            if (permission === "granted") {
+                var notification = new Notification("Sunscreen Reapplication Reminder", {
+                    body: "It's time to reapply your sunscreen!",
+                    icon: "../assets/images/notification-icon.png" // Path to your notification icon
+                });
+            }
+        });
+    }
+}
 var timerInterval; // Global variable to store the timer interval
 
 // Function to calculate time needed to reapply sunscreen based on UV level
@@ -24,14 +43,8 @@ function startTimer(duration, display) {
         display.textContent = hours + ":" + minutes + ":" + seconds;
 
         if (--timer < 0) {
-            clearInterval(timerInterval);
-            display.textContent = "00:00:00";
-            // Trigger a notification when the timer reaches 0
-            if (Notification.permission === 'granted') {
-                var notification = new Notification('Sunscreen Reminder', {
-                    body: 'It\'s time to reapply sunscreen!',
-                });
-            }
+            timer = duration;
+            showNotification();
         }
     }, 1000);
 }
