@@ -14,7 +14,7 @@ body {
 
 /* Navigation bar styles */
 nav {
-    background-color: #F9F7DC; /* Set your desired background color */
+    background-color: #EDEBDD; /* Set your desired background color */
     color: #D18585; /* Set your desired text color */
     padding: 20px;
     display: flex;
@@ -62,10 +62,24 @@ h2, h3, p {
     margin-bottom: 15px; /* Add spacing between elements */
 }
 
+.text-container {
+    margin-bottom: 20px; /* Add margin below text container */
+}
+
 .data-image {
     width: 80%; /* Adjust image width as needed */
     max-width: 400px; /* Limit maximum image width */
     margin: 10px auto; /* Center the images horizontally */
+}
+
+.two-column-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.column {
+    flex: 1;
 }
 
 /* Footer styles */

@@ -14,7 +14,7 @@ body {
 
 /* Navigation bar styles */
 nav {
-    background-color: #F9F7DC;
+    background-color: #EDEBDD;
     color: #D18585;
     padding: 20px;
     display: flex;
@@ -67,7 +67,7 @@ nav ul li a {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #F4EFBD;
+    background-color: #EDEBDD;
     border-radius: 8px;
 }
 
