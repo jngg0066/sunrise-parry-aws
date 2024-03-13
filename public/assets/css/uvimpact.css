@@ -68,3 +68,20 @@ h2, h3, p {
     margin: 10px auto; /* Center the images horizontally */
 }
 
+/* Footer styles */
+footer {
+    background-color: #7DA19D; /* The color you want for your footer */
+    padding: 20px 0; /* Adjust padding as needed */
+    display: flex; /* Enable flexbox for layout */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Align the items vertically */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer link styles */
+footer a {
+    text-decoration: none;
+    color: #fff; /* Set text color for footer links */
+    margin: 0 10px; /* Adjust margin to add spacing between links */
+}

@@ -8,12 +8,12 @@
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #F4EFBD;
+    background-color: #EDEBDD;
 }
 
 /* Navigation bar styles */
 nav {
-    background-color: #F4EFBD;
+    background-color: #F9F7DC;
     color: #D18585;
     padding: 20px;
     display: flex;
@@ -80,7 +80,7 @@ nav ul li a {
 .column1 {
     flex: 1;
     padding: 20px; /* Adjust padding as needed */
-    background-color: #F4EFBD; /* Set your desired background color for odd columns */
+    background-color: #EDEBDD; /* Set your desired background color for odd columns */
     color: #333;
     font-family: Kufam;
     font-weight: Bold;
@@ -94,7 +94,7 @@ nav ul li a {
 .column2 {
     flex: 1;
     padding: 20px; /* Adjust padding as needed */
-    background-color: #F4EFBD; /* Set your desired background color for even columns */
+    background-color: #EDEBDD; /* Set your desired background color for even columns */
     color: #000000; /* Set text color for even columns */
     font-family: Kufam;
     font-size: 20px;
@@ -121,7 +121,26 @@ nav ul li a {
 
 .column img {
     width: 100%; /* Ensure images take up full width of their container */
-    max-width: 300px; /* Adjust maximum width as needed */
+    max-width: 550px; /* Adjust maximum width as needed */
     height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #7DA19D; /* The color you want for your footer */
+    padding: 20px 0; /* Adjust padding as needed */
+    display: flex; /* Enable flexbox for layout */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Align the items vertically */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer link styles */
+footer a {
+    text-decoration: none;
+    color: #fff; /* Set text color for footer links */
+    margin: 0 10px; /* Adjust margin to add spacing between links */
 }
 
