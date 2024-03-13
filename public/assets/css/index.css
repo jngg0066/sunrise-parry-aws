@@ -8,13 +8,13 @@
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #F4EFBD; /* Set your desired background color */
+    background-color: #F4EFBD;
 }
 
 /* Navigation bar styles */
 nav {
-    background-color: #F4EFBD; /* Set desired background color */
-    color: #D18585; /* Set desired text color */
+    background-color: #F4EFBD;
+    color: #D18585;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -32,69 +32,54 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000000; /* Set desired text color */
+    color: #000000;
 }
 
 /* Logo styles */
-.logo {
-    display: flex;
-    align-items: center;
-}
-
 .logo img {
-    width: 150px; /* Set desired width */
+    width: 150px;
     height: auto;
     margin-right: 0px;
 }
 
 .logo h1 {
-    font-size: 24px; /* Set desired font size */
+    font-size: 24px;
     color: #D18585;
     margin-right: 50px;
 }
 
 /* Content styles */
-h2 {
-    margin-top: 20px;
-    font-size: 30px; /* Set desired font size */
-    color: #D18585; /* Set desired text color */
-    text-align: center;
-    padding: 20px 0;
-}
-
 .content {
-    margin-top: 50px; /* Adjust the value as needed */
+    margin-top: 50px;
     text-align: center;
-
+}
+.content {
+    margin-top: 50px;
+    text-align: center;
+    position: relative; /* Position relative to contain the absolutely positioned divider */
 }
 
-.blocks-container {
-    padding: 0 20px; /* Adjust the padding as needed */
+/* White division strip */
+.division {
+    background-color: white;
+    height: 20px; /* Adjust height as needed */
 }
 
-.blocks {
+/* Two-column container styles */
+.two-column-container {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 50px;
 }
 
-.block {
-    width: 30%; /* Adjust width as needed */
-    background-color: #F4EFBD; /* Set your desired background color */
-    padding: 10px;
-    border: 1px solid #99B99D; /* Set your desired border style */
-    text-align: center;
-
+.column {
+    flex: 1;
+    padding: 20px; /* Adjust padding as needed */
 }
 
-.block h3 {
-    margin-top: 10px; /* Adjust the value as needed */
-    font-weight: normal; /* Ensure the font weight is normal */
-
+.column:nth-child(odd) {
+    background-color: #F4EFBD; /* Set your desired background color for odd columns */
 }
 
-.block p {
-    margin-top: 30px; /* Adjust the value as needed */
-
+.column:nth-child(even) {
+    background-color: #D18585; /* Set your desired background color for even columns */
+    color: white; /* Set text color for even columns */
 }
