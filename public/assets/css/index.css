@@ -36,8 +36,13 @@ nav ul li a {
 }
 
 /* Logo styles */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
-    width: 150px;
+    width: 150px; /* Set desired width */
     height: auto;
     margin-right: 0px;
 }
@@ -61,6 +66,8 @@ nav ul li a {
 
 /* White division strip */
 .division {
+    margin-top: 100px;
+    margin-bottom: 100px;
     background-color: white;
     height: 20px; /* Adjust height as needed */
 }
@@ -70,16 +77,51 @@ nav ul li a {
     display: flex;
 }
 
-.column {
+.column1 {
     flex: 1;
     padding: 20px; /* Adjust padding as needed */
-}
-
-.column:nth-child(odd) {
     background-color: #F4EFBD; /* Set your desired background color for odd columns */
+    color: #333;
+    font-family: Kufam;
+    font-weight: Bold;
+    font-size: 40px;
+    align-items: center;
+    text-align: center; /* Center-align the text */
+    box-sizing: border-box;
 }
 
-.column:nth-child(even) {
-    background-color: #D18585; /* Set your desired background color for even columns */
-    color: white; /* Set text color for even columns */
+
+.column2 {
+    flex: 1;
+    padding: 20px; /* Adjust padding as needed */
+    background-color: #F4EFBD; /* Set your desired background color for even columns */
+    color: #000000; /* Set text color for even columns */
+    font-family: Kufam;
+    font-size: 20px;
+    align-items: center;
 }
+
+.column2 p:first-child {
+    margin-bottom: 20px; /* Add margin to the bottom of the first <p> element */
+}
+
+/* Three-column container styles */
+.three-column-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px; /* Adjust margin as needed */
+}
+
+/* Column styles */
+.column {
+    flex: 1;
+    text-align: center;
+}
+
+.column img {
+    width: 100%; /* Ensure images take up full width of their container */
+    max-width: 300px; /* Adjust maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
