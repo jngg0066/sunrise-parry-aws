@@ -121,7 +121,7 @@ nav ul li a {
 
 .column img {
     width: 100%; /* Ensure images take up full width of their container */
-    max-width: 550px; /* Adjust maximum width as needed */
+    max-width: 300px; /* Adjust maximum width as needed */
     height: auto; /* Maintain aspect ratio */
 }
 

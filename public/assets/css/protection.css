@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F4EFBD; /* Set desired background color */
+    background-color: #EDEBDD; /* Set desired background color */
 }
 
 /* Apply the same styles for the navigation bar */
 nav {
-    background-color: #F4EFBD;
+    background-color: #F9F7DC;
     color: #D18585;
     padding: 20px;
     display: flex;

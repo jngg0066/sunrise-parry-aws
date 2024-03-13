@@ -8,13 +8,13 @@
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #F4EFBD; /* Set your desired background color */
+    background-color: #EDEBDD; /* Set your desired background color */
     text-align: center; /* Center align text */
 }
 
 /* Navigation bar styles */
 nav {
-    background-color: #F4EFBD; /* Set your desired background color */
+    background-color: #F9F7DC; /* Set your desired background color */
     color: #D18585; /* Set your desired text color */
     padding: 20px;
     display: flex;
