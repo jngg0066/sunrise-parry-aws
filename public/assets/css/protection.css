@@ -200,15 +200,6 @@ nav ul li a {
     text-align: left; /* Center-align the options */
 }
 
-.column4 ul li::before {
-    content: "\2022";
-    color: #000000;
-    font-weight: bold;
-    display: inline-block;
-    width: 1;
-    margin-left: -1em;
-}
-
 .division1 {
     margin-top: 30px;
     margin-bottom: 30px;
