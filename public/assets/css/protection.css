@@ -104,7 +104,7 @@ nav ul li a {
 
 .column ul li::before {
     content: "\2022";
-    color: #007bff;
+    color: #000000;
     font-weight: bold;
     display: inline-block;
     width: 1;
