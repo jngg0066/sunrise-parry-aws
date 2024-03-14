@@ -115,6 +115,7 @@ nav ul li a {
     justify-content: space-around;
     align-items: center; /* Center the columns horizontally */
     text-align: center; /* Center text horizontally */
+    margin-top: 20px; /* Add margin to separate the two-column containers */
 }
 
 .heading {
@@ -123,17 +124,23 @@ nav ul li a {
     text-align: center; /* Center the heading horizontally */
 }
 
-.column1 {
+.column1,
+.column2 {
     flex: 1;
-    width: 100%; /* Set columns to take up full width */
+    width: 48%; /* Adjust width to leave some space between the columns */
     margin-bottom: 20px; /* Add margin between columns */
 }
 
-.column2 {
-    flex: 1;
-    width: 100%; /* Set columns to take up full width */
-    margin-bottom: 20px; /* Add margin between columns */
+.column1 {
+    margin-right: 2%; /* Add a small margin on the right side of the first column */
+    margin-left:  2%;
 }
+
+.column2 {
+    margin-right: 2%; /* Add a small margin on the left side of the second column */
+    margin-left:  2%;
+}
+
 .column1 p,
 .column2 p {
     font-size: 12px; /* Adjust font size as needed */
